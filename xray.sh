@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #change localtime
-rm -rf /etc/localtime
-cp /usr/share/zoneinfo/Asia/Colombo /etc/localtime
+#rm -rf /etc/localtime
+#cp /usr/share/zoneinfo/Asia/Colombo /etc/localtime
 
 # config xray
 cat << EOF > /etc/config.json
