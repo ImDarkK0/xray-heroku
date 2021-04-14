@@ -1,8 +1,8 @@
 FROM golang:alpine AS builder
 RUN apk update && apk add --no-cache git
 RUN apk update && apk add --no-cache tzdata
-RUN -e "SET_CONTAINER_TIMEZONE=true" \
-RUN -e "CONTAINER_TIMEZONE=Asia/Colombo"
+ENV TZ=Asia/Colombo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 WORKDIR /go/src/xray/core
 RUN git clone --progress https://github.com/XTLS/Xray-core.git . && \
     go mod download && \
