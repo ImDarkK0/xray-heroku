@@ -13,6 +13,6 @@
         }
     },
     "website": "https://starts.sh",
-    "repository": "https://github.com/yeahwu/xray-heroku",
+    "repository": "https://github.com/iamtrazy/xray-heroku",
     "stack": "container"
 }
