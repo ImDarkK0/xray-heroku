@@ -24,8 +24,7 @@ cat << EOF > /etc/config.json
             "streamSettings": {
                 "network": "ws",
                 "security": "none",
-                "wsSettings": {
-                    "acceptProxyProtocol": true, 
+                "wsSettings": { 
                     "path": "/websocket"
                 }
             }
