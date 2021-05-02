@@ -10,7 +10,6 @@ cat << EOF > /etc/config.json
   "inbounds":[
         {
             "port": $PORT,
-            "listen": "127.0.0.1",
             "protocol": "$PROTOCOL",
             "settings": {
                 "clients": [
